@@ -47,7 +47,7 @@ function rememberMyFilms () {
     for (let i = 0; i < 2; i++) {
         const a = prompt('Напишіть один із останніх переглянутих фільмів', ''),
             b = prompt('На скільки оціните його?');
-        if (a != null && b != null && a != '' && b != '' && a.length <= 50 && b.length <= 50) {
+        if (a != null && b != null && a !== '' && b !== '' && a.length <= 50 && b.length <= 50) {
             personalMovieDB.movies[a] = b;
             console.log('done');
         } else {
